@@ -115,9 +115,6 @@ do::
 Releasing a New Version of ckanext-cdccushomepage
 ----------------------------------------
 
-ckanext-cdccushomepage is availabe on PyPI as https://pypi.python.org/pypi/ckanext-cdccushomepage.
-To publish a new version to PyPI follow these steps:
-
 1. Update the version number in the ``setup.py`` file.
    See `PEP 440 <http://legacy.python.org/dev/peps/pep-0440/#public-version-identifiers>`_
    for how to choose version numbers.
