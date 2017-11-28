@@ -38,9 +38,21 @@ Preparation
    vim ckanext/cdccushomepage/fanstatic/combine.sh
    sh ckanext/cdccushomepage/fanstatic/combine.sh
 
-3. Open the ckanext/cdccushomepage/templates/home/snippets/denguens1.html, edit the iframe src, for example::
+3. Open ckanext/cdccushomepage/templates/home/snippets/denguens1.html, edit the iframe src, for example::
 
    <iframe class="iframe-container-ns1" src="http://localhost:12080/dataset/denguens1map/resource/b7b93f4d-35f7-4630-94c8-6efcb9aa62e3/view/4943d2ee-e24b-47b7-b9e5-4e6b72a01e0e" frameBorder="0" scrolling="no"></iframe>
+
+4. Edit the meta data on ckanext/cdccushomepage/templates/base.html, for example::
+
+   <meta property="og:title" content="疾病管制署資料開放平台" />
+   <meta property="og:url" content="http://localhost:12080/" />
+   <meta property="og:type" content="website" />
+   <meta property="og:description" content="透過互動式圖表、地圖與儀表板讓您了解公開資料價值。" />
+   <meta property="og:image" content="http://localhost:12080/nasa_taiwan_black.jpg" />
+   <meta property="og:image:secure_url" content="http://localhost:12080/nasa_taiwan_black.jpg" />
+   <meta property="og:image:type" content="image/png" />
+   <meta property="og:image:width" content="1420" />
+   <meta property="og:image:height" content="1016" />
 
 ------------
 Installation
@@ -102,9 +114,6 @@ do::
 ----------------------------------------
 Releasing a New Version of ckanext-cdccushomepage
 ----------------------------------------
-
-ckanext-cdccushomepage is availabe on PyPI as https://pypi.python.org/pypi/ckanext-cdccushomepage.
-To publish a new version to PyPI follow these steps:
 
 1. Update the version number in the ``setup.py`` file.
    See `PEP 440 <http://legacy.python.org/dev/peps/pep-0440/#public-version-identifiers>`_
